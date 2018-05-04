@@ -1,0 +1,49 @@
+¡ATENCIÓN!
+No estoy seguro de haber realizado bien el calculo de los metros de cable utilizados, pero es un valor aproximado. Cabe destacar que el uso de cable utp cat-5 es tanto para red como para telefono, ya que ese es el tipo voIP(telefono por ip). Esto explica el porque de tantos metros de cable.
+
+
+En nuestra empresa en principio la fibra óptica llega en el primer piso. Desde alli se conecta directamente a un router y este a un switch que será el encargado de distribuir el servicio de internet a todas las computadoras de ese piso, asi como también conectarse al switch de planta baja para hacerles llegar el servicio. Los switchs se conectan cada uno a una pachera para identificar los puestos de trabajo y desde alli va un cable a cada roseta y plug. Entre el router y el switch tenemos un servidor proxy que nos permitirá mejorar la seguridad y tener la capacidad de incorporar algún tipo de restricciones.
+Por otro lado tenemos una central telefónica voIP(voz por ip) la cuál se conecta a otra pachera para identificar los puestos. De la pachera va un cable a cada roseta o plug.
+Todo esto se encuentra conectado a un estabilizador UPS que nos ofrece protección en caso de que se nos corte la electricidad, asi como tambien que cuando no vuelva no se nos quemen los dispositivos.
+En la planta baja se encuentra un switch que distribuye internet a todos los dispositivos. Se conecta al switch principal del primer piso. Todos los cables de telefóno de la planta baja van directamente a la central telefónica del primer piso.
+Ambos pisos tienen 1 AP para dar wifi a la empresa y la sala de reuniones tiene su propio AP.
+
+INVENTARIO DIAGRAMA DE RED:
+
+Planta baja:
+*1 switch 24 bocas
+*1 pachera de 24 bocas
+*10 Rosetas con plug doble
+*10 Rosetas con plug simple
+*4 plugs
+*1 Router AP
+*66.5 mts de bandeja aproximadamente.
+*Metros de cable utilizados:
+	-519 mts de cable utp cat-5 desde las pacheras(red/telefono)a cada roseta(cables impactados sin ficha)
+	-40 mts patchcord con fichas rj-45(entre switch y pachera/desde pc hasta roseta).
+	-20 mts patchcord para teléfono rj-45.
+	-Total: 579 mts aproximadamente.
+
+Primer piso:
+*1 switch 24 bocas
+*2 pacheras de 24 bocas
+*1 Estabilizador UPS
+*1 Router
+*1 Computadora(servidor Proxy)
+*8 Rosetas con plug doble
+*5 Rosetas con plug simple
+*6 plugs(para telefono e impresora)
+*1 Router AP
+*1 Central telefónica de al menos 10 numeros internos
+*70,75 mts de bandeja aproximadamente.
+*Metros de cable utilizados:
+	-401.25 mts de cable utp cat-5 desde las pacheras(red/telefono)a cada roseta(cables impactados sin ficha)
+	-36 mts patchcord con fichas rj-45(entre switch y pachera/desde pc hasta roseta).
+	-20 mts patchcord para teléfono rj-45.
+	-Total: 457.25 mts aproximadamente.
+
+TOTAL METROS DE CABLE:
+
+*Aproximadamente 980,25 mts de cable utp cat-5
+Será necesario al menos 4 cajas de cable 300mts
+
